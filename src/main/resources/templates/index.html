@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Индексация</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <div class="row justify-content-center">
+        <form method="post" th:action="@{/index}" class="col-md-8">
+            <h2>Индексация</h2>
+            <div class="mb-3">
+                <label for="title" class="form-label"></label>
+                <input type="text" class="form-control" id="title" name="title">
+            </div>
+            <div class="mb-3">
+                <label for="season" class="form-label">season</label>
+                <input type="number" class="form-control" id="season" name="season">
+            </div>
+            <div class="mb-3">
+                <label for="episode" class="form-label">episode</label>
+                <input type="number" class="form-control" id="episode" name="episode">
+            </div>
+            <div class="mb-3">
+                <label for="subId" class="form-label">subId</label>
+                <input type="text" class="form-control" id="subId" name="subId">
+            </div>
+            <div class="mb-3">
+                <label for="timeStamp" class="form-label">timeStamp</label>
+                <input type="text" class="form-control" id="timeStamp" name="timeStamp">
+            </div>
+            <div class="mb-3">
+                <label for="text" class="form-label">text</label>
+                <input type="text" class="form-control" id="text" name="text">
+            </div>
+            <button type="submit" class="btn btn-primary">Проиндексировать</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
